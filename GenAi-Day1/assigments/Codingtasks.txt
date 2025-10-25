@@ -1,0 +1,94 @@
+
+📝 Python Assignments (10 Questions)
+
+1. Async API Simulation
+
+Write an async function to fetch AI model outputs from 3 simulated APIs concurrently using asyncio. Print all results in order.
+
+Concepts: async/await, asyncio.gather
+
+Bonus: simulate random delay and exception handling.
+
+2. Inheritance & AI Models
+
+Create a base class AIModel with attributes name and accuracy.
+
+Create two subclasses: ChatModel and EmbeddingModel
+
+Each subclass should have its own run() method demonstrating polymorphism.
+
+Test by creating an array of mixed model objects and calling run() on each.
+
+3. Polymorphic Pipeline
+
+Implement a Runnable interface (abstract base class) with invoke() method.
+
+Create 3 subclasses: Summarizer, SentimentAnalyzer, KeywordExtractor.
+
+Run them on a sample text polymorphically and print outputs.
+
+4. Operator Overloading
+
+Implement AIModel class with accuracy attribute.
+
+Overload <, >, and == operators to compare models based on accuracy.
+
+Create a list of 5 models and sort them by accuracy descending.
+
+5. Array of Objects + Conditions
+
+Create a list of AIModel objects.
+
+Filter all models with accuracy > 90 and name starting with "G".
+
+Print filtered models using a loop.
+
+6. Decorator for Logging AI Tasks
+
+Write a decorator log_task that logs: start time, end time, function name, arguments.
+
+Apply it to two AI tasks: generate_summary(text) and analyze_sentiment(text).
+
+Bonus: write logs to a file.
+
+7. Lambda & List Comprehension
+
+Given a list of text prompts, use list comprehension and a lambda function to:
+
+Count number of words per prompt
+
+Filter prompts containing the word "AI"
+
+8. Async + File I/O
+
+Create 3 async functions that write simulated AI responses to 3 different files concurrently.
+
+Use asyncio.gather() to write all files at once.
+
+Bonus: after writing, read all files asynchronously and print content.
+
+9. String Methods + Data Cleaning
+
+Given a list of AI-generated raw texts (with extra spaces, uppercase, and punctuation):
+
+Clean all texts using string methods (strip(), lower(), replace())
+
+Filter texts containing the word "genai"
+
+Store cleaned texts in a new list
+
+10. Combined Assignment (Advanced)
+
+Create a small AI pipeline class:
+
+Attributes: models (array of AIModel objects), data (list of texts)
+
+Methods:
+
+run_all() — runs all models on all data async
+
+filter_high_accuracy(threshold) — filters models by accuracy
+
+log_results() — uses a decorator to log each model’s output
+
+Test with 3 models and 5 texts, and demonstrate filtering, async execution, and logging.
