@@ -1,0 +1,60 @@
+
+1. Async Data Fetch
+
+Task: Fetch data from 3 simulated APIs asynchronously (just use asyncio.sleep to simulate delay).
+Clue: Use async def + await + asyncio.gather()
+Goal: Return all results as a single list.
+
+2. Multi-Agent System
+
+Task: Create Agent class with a run() method. Create 3 different agents.
+Clue: Use inheritance for different agent types.
+Goal: Store agents in a list and call run() for all.
+
+3. Logging Decorator
+
+Task: Write a decorator log_execution that prints function name and execution time.
+Clue: Use functools.wraps and time.time().
+Goal: Apply it to 2 small functions (add_numbers, multiply_numbers).
+
+4. Polymorphic Tasks
+
+Task: Base class Task with abstract method execute(). Subclasses: EmailTask, DataTask.
+Clue: Use abc.ABC and @abstractmethod
+Goal: Store tasks in a list and execute them polymorphically.
+
+5. Operator Overloading
+
+Task: Create Transaction class with amount. Overload + to sum transactions.
+Clue: Define __add__ method in class.
+Goal: Add two transaction objects and print total.
+
+6. Async File Writing
+
+Task: Create 2 async functions that write text to files concurrently.
+Clue: Use aiofiles library (or simulate with asyncio.sleep).
+Goal: Run both functions concurrently and check both files are written.
+
+7. Text Processor Class
+
+Task: Class TextProcessor with clean() and tokenize() methods.
+Clue: Pass string between methods and return processed text.
+Goal: Clean text (lowercase + remove punctuation) and tokenize (split by space).
+
+8. Function Pipeline
+
+Task: Create 3 functions: normalize(data), filter_invalid(data), aggregate(data)
+Clue: Use return values from one function as input to next.
+Goal: Chain functions together for a small list [0, '', 5, 10, None] → output sum of valid numbers.
+
+9. Event-Driven Async
+
+Task: Create async function on_new_user(name) that triggers 2 tasks: send_welcome_email and log_user
+Clue: Use await for both tasks inside main function
+Goal: Simulate new user registration and print both messages asynchronously.
+
+10. AI Agent Manager
+
+Task: Class AIAgent with async analyze(text) method. Class AgentManager runs multiple agents.
+Clue: Use asyncio.gather() to run multiple agent analyses.
+Goal: Return all agent results in a single list for given texts.
